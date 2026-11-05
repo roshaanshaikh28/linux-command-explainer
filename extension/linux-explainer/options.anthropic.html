@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Linux Command Explainer settings</title>
+<style>
+  body{max-width:560px;margin:40px auto;font:15px/1.5 system-ui,Arial,sans-serif;padding:0 16px}
+  input{width:100%;box-sizing:border-box;padding:8px;margin:4px 0 14px;font:14px ui-monospace,Consolas,monospace}
+  button{padding:8px 18px;border:0;border-radius:6px;background:#2563eb;color:#fff;cursor:pointer}
+  .note{background:#fff4e5;border-left:3px solid #f59e0b;padding:8px 12px;font-size:13px;margin:16px 0}
+  #msg{margin-left:10px;color:#15803d}
+</style></head>
+<body>
+  <h2>🐧 Linux Command Explainer: settings</h2>
+  <label>Anthropic API key (get one at console.anthropic.com)</label>
+  <input id="key" type="password" placeholder="sk-ant-..." autocomplete="off">
+  <label>Model (leave blank for the default, claude-haiku-5-5: fast and cheap)</label>
+  <input id="model" placeholder="claude-haiku-5-5">
+  <button id="save">Save</button><span id="msg"></span>
+  <div class="note"><b>Privacy:</b> the text you select is sent to the Anthropic API to be explained.
+  Don't use this on confidential logs, customer data, or anything your employer's policy forbids sending to external services.
+  Use a dedicated API key with a low spending limit, and never share this extension folder with the key saved in it.</div>
+  <script src="options.js"></script>
+</body></html>
